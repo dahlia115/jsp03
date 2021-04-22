@@ -18,7 +18,7 @@
 		application.setAttribute("cnt", "1");
 	} else {
 		int cnt01 = Integer.parseInt(cnt);//인트로 형변환 후 증가
-		cnt01++;
+			cnt01++;
 		application.setAttribute("cnt", cnt01+"");
 	}
 	%>
