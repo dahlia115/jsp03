@@ -20,6 +20,11 @@
 	request= <%= request.getAttribute("name") %><br><!-- 다음 페이지까지 유지 할 방법이 있다. -->
 	session= <%= session.getAttribute("name") %><br><!-- 브라우저가 살아있는 동안 유지 -->
 	application= <%= application.getAttribute("name") %><br><!-- 서버가 살아있는 동안 유지 -->
+	
+	<%
+		//forward로 다음 페이지로 전달 가능
+		request.getRequestDispatcher("secondPage.jsp").forward(request, response);	
+	%>
 	<a href="secondPage.jsp">secondPage.jsp이동</a>
 	
 </body>
